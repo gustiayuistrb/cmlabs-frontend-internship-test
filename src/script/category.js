@@ -21,7 +21,7 @@ function displayCategories(categories) {
     categories.forEach(category => {
         const categoryCard = `
             <div class="category-card">
-                <a href="category-detail.html?category=${category.strCategory}">
+                <a href="category-detail.html?category=${category.strCategory}" onclick="localStorage.setItem('selectedCategory', '${category.strCategory}')">
                     <img src="${category.strCategoryThumb}" alt="${category.strCategory}">
                     <div class="category-title-container">
                     <h3>${category.strCategory}</h3>

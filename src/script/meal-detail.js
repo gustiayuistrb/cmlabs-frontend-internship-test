@@ -18,10 +18,9 @@ $(document).ready(function () {
                 displayMealDetail(meal);
                 
                 const selectedCategory = localStorage.getItem('selectedCategory');
-                $('#selected-meal').text(meal.strMeal);
-                $('#selected-category').text(selectedCategory); 
-                $('.breadcrumb li:nth-child(2) a').attr('href', `category-detail.html?category=${selectedCategory}`);
-
+                $('#selected-category-link').text(selectedCategory)
+                                            .attr('href', `category-detail.html?category=${selectedCategory}`);
+                $('#selected-meal').text(meal.strMeal).addClass('active');
             },
             error: function () {
                 console.error("Error fetching meal details.");
@@ -50,6 +49,5 @@ $(document).ready(function () {
         } else {
             videoContainer.hide(); 
         }
-        $('#selected-meal').text(meal.strMeal).addClass('active');
-        }
+    }
 });
