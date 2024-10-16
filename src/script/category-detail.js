@@ -34,7 +34,9 @@ $(document).ready(function () {
               <div class="meal-card">
                   <a href="meal-detail.html?mealId=${meal.idMeal}">
                       <img src="${meal.strMealThumb}" alt="${meal.strMeal}">
+                      <div class="meal-title-container">
                       <h3>${meal.strMeal}</h3>
+                      </div>
                   </a>
               </div>
           `;

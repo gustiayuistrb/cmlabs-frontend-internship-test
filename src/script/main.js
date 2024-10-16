@@ -23,7 +23,9 @@ function displayCategories(categories) {
             <div class="category-card">
                 <a href="category-detail.html?category=${category.strCategory}">
                     <img src="${category.strCategoryThumb}" alt="${category.strCategory}">
+                    <div class="category-title-container">
                     <h3>${category.strCategory}</h3>
+                    </div>
                 </a>
             </div>
         `;
