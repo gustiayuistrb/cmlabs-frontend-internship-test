@@ -5,7 +5,7 @@ $(document).ready(function () {
   const category = urlParams.get('category');
 
   if (category) {
-      $('#selected-category').text(category); 
+      $('#selected-category').text(category).addClass('active'); 
       loadMeals(category); 
   } else {
       console.error('No category found');

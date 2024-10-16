@@ -50,5 +50,6 @@ $(document).ready(function () {
         } else {
             videoContainer.hide(); 
         }
+        $('#selected-meal').text(meal.strMeal).addClass('active');
         }
 });

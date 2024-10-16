@@ -28,7 +28,6 @@ h1 {
 
 .category-card {
     margin: 10px;
-    padding: 5px;
     border: 1px solid #ccc;
     width: calc(25% - 50px);
     border-radius: 20px;
@@ -39,10 +38,10 @@ h1 {
     justify-content: center;
     align-items: center;
     flex-direction: column; 
+    height: 120px;
 }
 
 .category-card img {
-    max-width: 100%;
     height: auto;
     border-radius: 8px; 
 }
@@ -52,7 +51,7 @@ h1 {
     color: white; 
     padding: 5px; 
     position: absolute; 
-    top: 40%; 
+    top: 30%; 
     left: 50%; 
     transform: translateX(-50%); 
     z-index: 2; 
@@ -86,6 +85,16 @@ h1 {
 img {
     max-width: 100%;
     height: auto;
+}
+
+.icon-container {
+    margin: 80px 0 20px; /* 20px atas dan bawah, 0px kiri dan kanan */
+    text-align: center;
+}
+
+.icon-container i {
+    margin-right: 10px;
+    color: #fd5d5d !important;
 }
 
 .navbar {
@@ -148,6 +157,10 @@ img {
     text-decoration: none; 
     color: #213448; 
     font-weight: 500;
+}
+
+.breadcrumb .active {
+    color: #a3a0a0; 
 }
 
 .breadcrumb a:hover {
@@ -217,8 +230,8 @@ h1 {
 
 #meal-recipe {
     margin-top: 10px; 
-    list-style-type: none; 
-    padding: 0; 
+    list-style-type: disc; 
+    padding-left: 20px; 
 }
 
 #meal-recipe li {
